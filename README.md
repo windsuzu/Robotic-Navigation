@@ -1,11 +1,11 @@
 <!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
+*** Thanks for checking out the Robot-Navigation. If you have a suggestion
 *** that would make this better, please fork the repo and create a pull request
 *** or simply open an issue with the tag "enhancement".
 *** Thanks again! Now go create something AMAZING! :D
 ***
 *** To avoid retyping too much info. Do a search and replace for the following:
-*** github_username (that is "windsuzu"), repo_name (that is "Best-README-Template"), project_title, project_description
+*** github_username (that is "windsuzu"), repo_name (that is "Robot-Navigation"), Robot Navigation, project_description
 -->
 
 <!-- [![Issues][issues-shield]][issues-url] -->
@@ -19,23 +19,23 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/windsuzu/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  <a href="https://github.com/windsuzu/Robot-Navigation">
+    <img src="images/jetbot.jpg" alt="Logo" height=220>
   </a>
 
-  <h3 align="center">project_title</h3>
+  <h3 align="center">Robot Navigation</h3>
 
   <p align="center">
-    project_description
+    Robot Navigation
     <br />
-    <a href="https://github.com/windsuzu/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/windsuzu/Robot-Navigation"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/windsuzu/Best-README-Template">View Demo</a>
+    <a href="https://github.com/windsuzu/Robot-Navigation">View Demo</a>
     ·
-    <a href="https://github.com/windsuzu/Best-README-Template/issues">Report Bug</a>
+    <a href="https://github.com/windsuzu/Robot-Navigation/issues">Report Bug</a>
     ·
-    <a href="https://github.com/windsuzu/Best-README-Template/issues">Request Feature</a>
+    <a href="https://github.com/windsuzu/Robot-Navigation/issues">Request Feature</a>
   </p>
 </p>
 
@@ -85,9 +85,9 @@ The key features of **Best README Template**:
 <summary>Built With</summary>
 <br>
 
-* [壹](https://github.com/windsuzu/Best-README-Template)
-* [貳](https://github.com/windsuzu/Best-README-Template)
-* [參](https://github.com/windsuzu/Best-README-Template)
+* [壹](https://github.com/windsuzu/Robot-Navigation)
+* [貳](https://github.com/windsuzu/Robot-Navigation)
+* [參](https://github.com/windsuzu/Robot-Navigation)
 
 </details>
 
@@ -108,7 +108,7 @@ This is an example of how to list things you need to use the software and how to
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/windsuzu/Best-README-Template.git
+   git clone https://github.com/windsuzu/Robot-Navigation.git
    ```
 
 2. Install the dependencies
@@ -133,7 +133,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 ## Roadmap
 
-See the [open issues](https://github.com/windsuzu/Best-README-Template/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/windsuzu/Robot-Navigation/issues) for a list of proposed features (and known issues).
 
 ---
 
@@ -149,29 +149,29 @@ Contributions are what make the open source community such an amazing place to b
 
 ## License
 
-Distributed under the MIT License. See [LICENSE](https://github.com/windsuzu/Best-README-Template/blob/main/LICENSE) for more information.
+Distributed under the MIT License. See [LICENSE](https://github.com/windsuzu/Robot-Navigation/blob/main/LICENSE) for more information.
 
 ## Contact
 
 Reach out to the maintainer at one of the following places:
 
-* [GitHub discussions](https://github.com/windsuzu/Best-README-Template/discussions)
+* [GitHub discussions](https://github.com/windsuzu/Robot-Navigation/discussions)
 * The email which is located [in GitHub profile](https://github.com/windsuzu)
 
 
 ## Acknowledgements
 
-* [いち](https://github.com/windsuzu/Best-README-Template)
-* [に](https://github.com/windsuzu/Best-README-Template)
-* [さん](https://github.com/windsuzu/Best-README-Template)
+* [いち](https://github.com/windsuzu/Robot-Navigation)
+* [に](https://github.com/windsuzu/Robot-Navigation)
+* [さん](https://github.com/windsuzu/Robot-Navigation)
 
 
-[contributors-shield]: https://img.shields.io/github/contributors/windsuzu/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/windsuzu/Best-README-Template/graphs/contributors
-[issues-shield]: https://img.shields.io/github/issues/windsuzu/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/windsuzu/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/windsuzu/Best-README-Template.svg?style=for-the-badge&label=license
-[license-url]: https://github.com/windsuzu/Best-README-Template/blob/main/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/windsuzu/Robot-Navigation.svg?style=for-the-badge
+[contributors-url]: https://github.com/windsuzu/Robot-Navigation/graphs/contributors
+[issues-shield]: https://img.shields.io/github/issues/windsuzu/Robot-Navigation.svg?style=for-the-badge
+[issues-url]: https://github.com/windsuzu/Robot-Navigation/issues
+[license-shield]: https://img.shields.io/github/license/windsuzu/Robot-Navigation.svg?style=for-the-badge&label=license
+[license-url]: https://github.com/windsuzu/Robot-Navigation/blob/main/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/windsuzu
 [pr-welcome-shield]: https://shields.io/badge/PRs-Welcome-ff69b4?style=for-the-badge
