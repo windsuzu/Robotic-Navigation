@@ -20,7 +20,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/windsuzu/Robot-Navigation">
-    <img src="images/jetbot.jpg" alt="Logo" height=220>
+    <img src="images/jetbot.png" alt="Logo" height=220>
   </a>
 
   <h3 align="center">Robot Navigation</h3>
