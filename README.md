@@ -45,10 +45,10 @@
   * [Lab 1 - Kinematic Model & Path Tracking Control](#lab-1---kinematic-model--path-tracking-control)
   * [Lab 2 - Path Planning](#lab-2---path-planning)
   * [Lab 3 - SLAM](#lab-3---slam)
-  * [Lab 4](#lab-4)
+  * [Lab 4 - ORB-SLAM on JetBot](#lab-4---orb-slam-on-jetbot)
   * [Lab 5](#lab-5)
   * [Lab 6](#lab-6)
-* [NVIDIA JetBot](#nvidia-jetbot)
+* [JetBot](#jetbot)
   * [Simulation](#simulation)
   * [Real World Model](#real-world-model)
 * [Contributing](#contributing)
@@ -73,7 +73,7 @@ The key features of **Robotic Navigation**:
 - Kinetic Model (WMR Model, Bicycle Model)
 - Path Tracking (PID Control, Pure-Pursuit Control, Stanley Control)
 - Path Planning (A* Algorithm, RRT Algorithm, RRT* Algorithm)
-
+- SLAM (Fast-SLAM, ORB-SLAM)
 
 <details close>
 <summary>Built With</summary>
@@ -96,7 +96,7 @@ The key features of **Robotic Navigation**:
 
 ### Lab 1 - Kinematic Model & Path Tracking Control
 
-在 Lab 1 我們要完成兩種 Kinematic Model 的 update 程式碼，分別是 `Bicycle Model` 以及 `WMR (wheeled mobile robot) Model`。 接著基於這兩種模型，完成三種路線追蹤演算法，分別為 `PID Control`、`Pure Pursuit Control`，以及 `Stanley Control`。
+在 Lab 1 我們要完成兩種 Kinematic Model 的 update 程式碼，分別是 `Bicycle Model` 以及 `WMR (wheeled mobile robot) Model`。 接著，基於這兩種模型，完成三種路線追蹤演算法，分別為 `PID Control`、`Pure Pursuit Control`，以及 `Stanley Control`。
 
 - 題目要求: [lab1.pdf](lab1/lab1.pdf)
 - 題目解釋: [lab1-hint.pdf](lab1/lab1_hint.pdf)
@@ -115,7 +115,7 @@ The key features of **Robotic Navigation**:
 
 ### Lab 2 - Path Planning
 
-在 Lab 2 我們要實作路徑規劃 (Path Planning) 的演算法，總共有 3 個需要實作的算法，分別為 `A* algorithm`、`RRT algorithm`，以及 `RRT* algorithm`。
+在 Lab 2 我們要實作路徑規劃 (Path Planning) 的演算法，這些演算法的目標通常為找到起點與終點的最佳路徑；我們總共有 3 個需要實作的算法，分別為 `A* algorithm`、`RRT algorithm`，以及 `RRT* algorithm`。
 
 - 題目要求: [lab2.pdf](lab2/lab2.pdf)
 - 題目解釋: [lab2-hint.pdf](lab2/lab2_hint.pdf)
@@ -130,7 +130,7 @@ The key features of **Robotic Navigation**:
 
 ### Lab 3 - SLAM
 
-在 Lab 3 我們要實作 Fast-SLAM (simultaneous localization and mapping)，一種 SLAM 的變形。所謂 SLAM 是一種概念，通過車子感測器所偵測到的地標特徵，來定位車子自身的位置和狀態，一次達到定位與地圖建構的目標。
+在 Lab 3 我們要實作 `Fast-SLAM` (simultaneous localization and mapping)，一種 SLAM 的變形。所謂 SLAM 是一種概念，通過車子感測器所偵測到的地標特徵，來定位車子自身的位置和狀態，一次達到定位與地圖建構的目標。
 
 - 題目要求與解釋: [lab3.pdf](lab3/lab3.pdf)
 - 完整程式碼: [lab3/Program](lab3/program/)
@@ -142,17 +142,30 @@ The key features of **Robotic Navigation**:
 
 ---
 
-### Lab 4
+### Lab 4 - ORB-SLAM on JetBot
 
+在 Lab 4 我們要在 JetBot 上實作 `ORB-SLAM 2`，利用 JetBot 的照相機來偵測現實世界的地標座標。要達到目標，我們必須要將 ORB-SLAM library (C++) 與 JetBot 上的 Python 環境進行綁定。接著必須使用 JetBot 的照相機收集棋盤照片，對 JetBot 進行校正 (`Camera Calibration`)。
+
+- 題目要求與解釋: [lab4.pdf](lab4/lab4.pdf)
+- 完整程式碼: [lab4/Program](lab4/program/)
+- 成果展示 (點擊截圖查看程式碼): 
+
+| ORB-SLAM on JetBot                                                               |
+| -------------------------------------------------------------------------------- |
+| [<img src="images/lab4/orb-slam.gif" width=250>](lab4/program/calibration.ipynb) |
+
+---
 
 ### Lab 5
+
+
 
 
 ### Lab 6
 
 ---
 
-## NVIDIA JetBot
+## JetBot
 
 ### Simulation
 
