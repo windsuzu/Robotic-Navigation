@@ -47,7 +47,7 @@
   * [Lab 3 - SLAM](#lab-3---slam)
   * [Lab 4 - ORB-SLAM on JetBot](#lab-4---orb-slam-on-jetbot)
   * [Lab 5 - Semantic Segmentation](#lab-5---semantic-segmentation)
-  * [Lab 6](#lab-6)
+  * [Lab 6 - Model-Free Reinforcement Learning for Mapless Navigation](#lab-6---model-free-reinforcement-learning-for-mapless-navigation)
 * [JetBot](#jetbot)
   * [Simulation](#simulation)
   * [Real World Model](#real-world-model)
@@ -74,6 +74,8 @@ The key features of **Robotic Navigation**:
 - Path Tracking (PID Control, Pure-Pursuit Control, Stanley Control)
 - Path Planning (A* Algorithm, RRT Algorithm, RRT* Algorithm)
 - SLAM (Fast-SLAM, ORB-SLAM)
+- Semantic Segmentation (Encoder-Decoder, FCN, UNet, PSPNet)
+- Reinforcement Learning (DDPG)
 
 <details close>
 <summary>Built With</summary>
@@ -164,14 +166,26 @@ The key features of **Robotic Navigation**:
 - 完整程式碼: [lab5/Program](lab5/program/)
 - 成果展示 (點擊截圖查看程式碼): 
 
-| Encoder-Decoder                                                                      | FCN                                                                                   |
-| ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------- |
+|                                   Encoder-Decoder                                    |                                          FCN                                          |
+| :----------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------: |
 | [<img src="images/lab5/ED.jpg" width=350>](lab5/program/samantic_segmentation.ipynb) | [<img src="images/lab5/FCN.jpg" width=350>](lab5/program/samantic_segmentation.ipynb) |
-| **UNet**                                                                             | **PSPNet**                                                                            |
+|                                       **UNet**                                       |                                      **PSPNet**                                       |
 | [<img src="images/lab5/U.jpg" width=350>](lab5/program/samantic_segmentation.ipynb)  | [<img src="images/lab5/PSP.jpg" width=350>](lab5/program/samantic_segmentation.ipynb) |
 
+---
 
-### Lab 6
+### Lab 6 - Model-Free Reinforcement Learning for Mapless Navigation
+
+在 Lab 6 我們要使用強化學習 (`Reinforcement Learning，RL`) 來取代所有在 lab1、lab2、lab3 執行的工作。原本為了讓車子從任意起點走到任意終點，需要以 SLAM 等演算法建立地圖，接著執行路徑規劃以及路徑追蹤才能完成；但強化學習能夠跳過這些步驟，以獎勵方式來學習達成目標。在 Lab 6 中所使用的 RL 為 `DDPG (Deep Deterministic Policy Gradient)`。
+
+
+- 題目要求與解釋: [lab6.pdf](lab6/lab6.pdf)
+- 完整程式碼: [lab6/Program](lab6/program/)
+- 成果展示 (點擊截圖查看程式碼): 
+
+| Training Loop 50                                                       | Training Loop 450                                                      | Training Loop 750                                                      |
+| ---------------------------------------------------------------------- | ---------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| [<img src="images/lab6/0050_eps.gif" width=250>](lab6/program/ddpg.py) | [<img src="images/lab6/0450_eps.gif" width=250>](lab6/program/ddpg.py) | [<img src="images/lab6/0750_eps.gif" width=250>](lab6/program/ddpg.py) |
 
 ---
 
