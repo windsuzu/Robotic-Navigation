@@ -41,11 +41,10 @@
 <summary>Table of Contents</summary>
 
 * [About](#about)
-* [Lab & Assignment](#lab--assignment)
+* [Lab](#lab)
   * [Lab 1 - Kinematic Model & Path Tracking Control](#lab-1---kinematic-model--path-tracking-control)
   * [Lab 2 - Path Planning](#lab-2---path-planning)
-  * [Assignment 1](#assignment-1)
-  * [Lab 3](#lab-3)
+  * [Lab 3 - SLAM](#lab-3---slam)
   * [Lab 4](#lab-4)
   * [Lab 5](#lab-5)
   * [Lab 6](#lab-6)
@@ -67,13 +66,14 @@
 <tr>
 <td>
 
-本專案為成功大學  Robotic Navigation and Exploration (CS562000) 的課程整理；目標為了解自駕車原理，最終能夠使用影像辨識技術操縱 NVIDIA JetBot。專案細分為 6 個實作的 lab、2 個 assignment，以及 NVIDIA JetBot 的模擬與真實世界模型。
+本專案為成功大學  Robotic Navigation and Exploration (CS562000) 的課程整理；目標為了解自駕車原理，最終能夠使用影像辨識技術操縱 NVIDIA JetBot。專案細分為 6 個實作的 lab，以及最終 NVIDIA JetBot 的模擬與真實世界模型。
 
 The key features of **Robotic Navigation**:
 
 - Kinetic Model (WMR Model, Bicycle Model)
 - Path Tracking (PID Control, Pure-Pursuit Control, Stanley Control)
-- 
+- Path Planning (A* Algorithm, RRT Algorithm, RRT* Algorithm)
+
 
 <details close>
 <summary>Built With</summary>
@@ -92,7 +92,7 @@ The key features of **Robotic Navigation**:
 
 ---
 
-## Lab & Assignment
+## Lab
 
 ### Lab 1 - Kinematic Model & Path Tracking Control
 
@@ -128,11 +128,19 @@ The key features of **Robotic Navigation**:
 
 ---
 
-### Assignment 1
+### Lab 3 - SLAM
 
+在 Lab 3 我們要實作 Fast-SLAM (simultaneous localization and mapping)，一種 SLAM 的變形。所謂 SLAM 是一種概念，通過車子感測器所偵測到的地標特徵，來定位車子自身的位置和狀態，一次達到定位與地圖建構的目標。
 
-### Lab 3
+- 題目要求與解釋: [lab3.pdf](lab3/lab3.pdf)
+- 完整程式碼: [lab3/Program](lab3/program/)
+- 成果展示 (點擊截圖查看程式碼): 
 
+| Fast SLAM                                                                        |
+| -------------------------------------------------------------------------------- |
+| [<img src="images/lab3/fast_slam.gif" width=250>](lab3/program/fast_slam_lab.py) |
+
+---
 
 ### Lab 4
 
