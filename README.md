@@ -43,7 +43,7 @@
 * [About](#about)
 * [Lab & Assignment](#lab--assignment)
   * [Lab 1 - Kinematic Model & Path Tracking Control](#lab-1---kinematic-model--path-tracking-control)
-  * [Lab 2](#lab-2)
+  * [Lab 2 - Path Planning](#lab-2---path-planning)
   * [Assignment 1](#assignment-1)
   * [Lab 3](#lab-3)
   * [Lab 4](#lab-4)
@@ -71,8 +71,8 @@
 
 The key features of **Robotic Navigation**:
 
-- 
-- 
+- Kinetic Model (WMR Model, Bicycle Model)
+- Path Tracking (PID Control, Pure-Pursuit Control, Stanley Control)
 - 
 
 <details close>
@@ -81,6 +81,7 @@ The key features of **Robotic Navigation**:
 
 * Python 3
 * OpenCV 2
+* Numpy
 * PyTorch
 
 </details>
@@ -95,24 +96,37 @@ The key features of **Robotic Navigation**:
 
 ### Lab 1 - Kinematic Model & Path Tracking Control
 
-在 Lab 1 我們要完成兩種 Kinematic Model 的 update 程式碼，分別是 Bicycle Model 以及 WMR (wheeled mobile robot) Model。 接著基於這兩種模型，完成三種路線追蹤演算法，分別為 PID Control、Pure Pursuit Control，以及 Stanley Control。
+在 Lab 1 我們要完成兩種 Kinematic Model 的 update 程式碼，分別是 `Bicycle Model` 以及 `WMR (wheeled mobile robot) Model`。 接著基於這兩種模型，完成三種路線追蹤演算法，分別為 `PID Control`、`Pure Pursuit Control`，以及 `Stanley Control`。
 
 - 題目要求: [lab1.pdf](lab1/lab1.pdf)
 - 題目解釋: [lab1-hint.pdf](lab1/lab1_hint.pdf)
+- 完整程式碼: [lab1/Program](lab1/program/)
 - 成果展示 (點擊截圖查看程式碼): 
 
 | WMR Model (WASD Control)                                                     | WMR PID                                                                               | WMR Pure Pursuit                                                                                        |
 | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
 | [<img src="images/lab1/wmr_model.gif" width=250>](lab1/program/wmr_model.py) | [<img src="images/lab1/wmr_pid.gif" width=250>](lab1/program/PathTracking/wmr_pid.py) | [<img src="images/lab1/wmr_pure_pursuit.gif" width=250>](lab1/program/PathTracking/wmr_pure_pursuit.py) |
 
-| Bicycle Model (WASD Control) | Bicycle Pure Pursuit | Bicycle Stanley |
-| ---------------------------- | -------------------- | --------------- |
-| [<img src="images/lab1/bicycle_model.gif" width=250>](lab1/program/bicycle_model.py)                             | [<img src="images/lab1/bicycle_pure_pursuit.gif" width=250>](lab1/program/PathTracking/bicycle_pure_pursuit.py)                     | [<img src="images/lab1/bicycle_stanley.gif" width=250>](lab1/program/PathTracking/bicycle_stanley.py)                |
+| Bicycle Model (WASD Control)                                                         | Bicycle Pure Pursuit                                                                                            | Bicycle Stanley                                                                                       |
+| ------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| [<img src="images/lab1/bicycle_model.gif" width=250>](lab1/program/bicycle_model.py) | [<img src="images/lab1/bicycle_pure_pursuit.gif" width=250>](lab1/program/PathTracking/bicycle_pure_pursuit.py) | [<img src="images/lab1/bicycle_stanley.gif" width=250>](lab1/program/PathTracking/bicycle_stanley.py) |
 
 ---
 
-### Lab 2
+### Lab 2 - Path Planning
 
+在 Lab 2 我們要實作路徑規劃 (Path Planning) 的演算法，總共有 3 個需要實作的算法，分別為 `A* algorithm`、`RRT algorithm`，以及 `RRT* algorithm`。
+
+- 題目要求: [lab2.pdf](lab2/lab2.pdf)
+- 題目解釋: [lab2-hint.pdf](lab2/lab2_hint.pdf)
+- 完整程式碼: [lab2/Program](lab2/program/)
+- 成果展示 (點擊截圖查看程式碼): 
+
+| A* algorithm                                                                          | RRT algorithm                                                                 | RRT* algorithm                                                                          |
+| ------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| [<img src="images/lab2/a_star.gif" width=250>](lab2/program/PathPlanning/dijkstra.py) | [<img src="images/lab2/rrt.gif" width=250>](lab2/program/PathPlanning/rrt.py) | [<img src="images/lab2/rrt_star.gif" width=250>](lab2/program/PathPlanning/rrt_star.py) |
+
+---
 
 ### Assignment 1
 
