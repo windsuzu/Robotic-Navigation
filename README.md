@@ -46,7 +46,7 @@
   * [Lab 2 - Path Planning](#lab-2---path-planning)
   * [Lab 3 - SLAM](#lab-3---slam)
   * [Lab 4 - ORB-SLAM on JetBot](#lab-4---orb-slam-on-jetbot)
-  * [Lab 5](#lab-5)
+  * [Lab 5 - Semantic Segmentation](#lab-5---semantic-segmentation)
   * [Lab 6](#lab-6)
 * [JetBot](#jetbot)
   * [Simulation](#simulation)
@@ -144,7 +144,7 @@ The key features of **Robotic Navigation**:
 
 ### Lab 4 - ORB-SLAM on JetBot
 
-在 Lab 4 我們要在 JetBot 上實作 `ORB-SLAM 2`，利用 JetBot 的照相機來偵測現實世界的地標座標。要達到目標，我們必須要將 ORB-SLAM library (C++) 與 JetBot 上的 Python 環境進行綁定。接著必須使用 JetBot 的照相機收集棋盤照片，對 JetBot 進行校正 (`Camera Calibration`)。
+在 Lab 4 我們要在 JetBot 上實作 `ORB-SLAM 2`，利用 JetBot 的照相機來偵測現實世界的地標座標。要達成該目標，我們必須將 ORB-SLAM library (C++) 與 JetBot 上的 Python 環境進行綁定；接著使用 JetBot 的照相機收集棋盤照片，對 JetBot 進行校正 (`Camera Calibration`)。
 
 - 題目要求與解釋: [lab4.pdf](lab4/lab4.pdf)
 - 完整程式碼: [lab4/Program](lab4/program/)
@@ -152,13 +152,23 @@ The key features of **Robotic Navigation**:
 
 | ORB-SLAM on JetBot                                                               |
 | -------------------------------------------------------------------------------- |
-| [<img src="images/lab4/orb-slam.gif" width=250>](lab4/program/calibration.ipynb) |
+| [<img src="images/lab4/orb_slam.gif" width=250>](lab4/program/calibration.ipynb) |
 
 ---
 
-### Lab 5
+### Lab 5 - Semantic Segmentation
 
+在 Lab 5 我們要在 PyTorch 上實作影像分割 (`Image Segmentation`) 中的語義分割 (`Semantic Segmentation`)，也就是對該張圖片的每一個像素點都進行分類。我們使用四種常見的模型來實作，分別為 `Encoder-Decoder`、`Fully Convolution Network (FCN)`、`UNet`，以及 `PSPNet`。
 
+- 題目要求與解釋: [lab5.pdf](lab5/lab5.pdf)
+- 完整程式碼: [lab5/Program](lab5/program/)
+- 成果展示 (點擊截圖查看程式碼): 
+
+| Encoder-Decoder                                                                      | FCN                                                                                   |
+| ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------- |
+| [<img src="images/lab5/ED.jpg" width=350>](lab5/program/samantic_segmentation.ipynb) | [<img src="images/lab5/FCN.jpg" width=350>](lab5/program/samantic_segmentation.ipynb) |
+| **UNet**                                                                             | **PSPNet**                                                                            |
+| [<img src="images/lab5/U.jpg" width=350>](lab5/program/samantic_segmentation.ipynb)  | [<img src="images/lab5/PSP.jpg" width=350>](lab5/program/samantic_segmentation.ipynb) |
 
 
 ### Lab 6
