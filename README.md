@@ -26,7 +26,7 @@
   <h3 align="center">Robot Navigation</h3>
 
   <p align="center">
-    Robot Navigation
+    This repo implemented the core technology of the self-driving car, including the basic concepts such as path tracking, path planning, SLAM, etc., and deep learning techniques such as computer vision and reinforcement learning. Finally, we practiced with NVIDIA JetBot in both the simulator and the real world.
     <br />
     <a href="https://github.com/windsuzu/Robotic-Navigation">View Demo</a>
     ·
